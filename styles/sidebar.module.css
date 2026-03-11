@@ -18,6 +18,8 @@
     display: flex;
     flex-direction: column;
     overflow-y: auto;
+    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
 }
 
 .title {
@@ -71,8 +73,7 @@
 }
 
 .footer {
-    padding: 1.5rem 1rem;
-    border-top: 1px solid #e0e0e0;
+    padding: 0.5rem 1rem;
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
@@ -107,17 +108,16 @@
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-    border-bottom: 1px solid #e0e0e0;
 }
 
-.quoteLight {
+.quoteSection .light {
     text-align: left;
     font-size: 0.5rem;
     color: #666;
     line-height: 1.4;
 }
 
-.quoteHeavy {
+.quoteSection .heavy {
     text-align: left;
     font-size: 0.65rem;
     color: #333;
@@ -125,7 +125,7 @@
     margin: 0;
 }
 
-.quoteAuthor {
+.quoteSection .author {
     text-align: left;
     font-size: 0.5rem;
     color: #999;

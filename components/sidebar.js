@@ -27,9 +27,9 @@ export default function Sidebar() {
     return (
         <aside className={styles.sidebar}>
             <div className={styles.quoteSection}>
-                <p className={styles.quoteHeavy}>And if thou gaze long into an abyss, the abyss will also gaze into thee.</p>
-                <p className={styles.quoteAuthor}>Nietzsche</p>
-                <p className={styles.quoteLight}>here in lies, most of the pebbles i had gathered, when i whiled away abyss-gazing</p>
+                <p className={styles.heavy}>And if thou gaze long into an abyss, the abyss will also gaze into thee.</p>
+                <p className={styles.author}>Nietzsche</p>
+                <p className={styles.light}>here in lies, most of the pebbles i had gathered, when i whiled away abyss-gazing</p>
             </div>
             <nav className={styles.nav}>
                 {loading ? (
@@ -40,9 +40,9 @@ export default function Sidebar() {
                             <li key={id}>
                                 <Link href={`/posts/${id}`} className={styles.postLink}>
                                     <div className={styles.postTitle}>{title}</div>
-                                    <div className={styles.postDate}>
+                                    {/* <div className={styles.postDate}>
                                         <Date dateString={date} />
-                                    </div>
+                                    </div> */}
                                 </Link>
                             </li>
                         ))}
@@ -70,8 +70,10 @@ export default function Sidebar() {
                         </a>
                     </div>
                 </div>
-                <p className={styles.quoteLight}>yeah yeah yeah, Nietzsche didn't mean it that way. blah blah blah!</p>
             </footer>
+            <div className={styles.quoteSection}>
+                <p className={styles.light}>yeah yeah yeah, Nietzsche didn't mean it that way. blah blah blah!</p>
+            </div>
         </aside>
     );
 }
