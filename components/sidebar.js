@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import styles from "./sidebar.module.css";
+import styles from "../styles/sidebar.module.css";
 import Date from "./date";
 
 export default function Sidebar() {
