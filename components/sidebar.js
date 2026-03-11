@@ -26,10 +26,12 @@ export default function Sidebar() {
 
     return (
         <aside className={styles.sidebar}>
-            <nav className={styles.nav}>
+            <div className={styles.quoteSection}>
                 <p className={styles.quoteHeavy}>And if thou gaze long into an abyss, the abyss will also gaze into thee.</p>
-                <p className={styles.quoteAuthor}>Nietsche</p>
+                <p className={styles.quoteAuthor}>Nietzsche</p>
                 <p className={styles.quoteLight}>here in lies, most of the pebbles i had gathered, when i whiled away abyss-gazing</p>
+            </div>
+            <nav className={styles.nav}>
                 {loading ? (
                     <div className={styles.loading}>Loading...</div>
                 ) : (
@@ -68,7 +70,7 @@ export default function Sidebar() {
                         </a>
                     </div>
                 </div>
-                <p className={styles.quoteLight}>yeah yeah yeah, Nietsche didn't mean it that way. blah blah blah!</p>
+                <p className={styles.quoteLight}>yeah yeah yeah, Nietzsche didn't mean it that way. blah blah blah!</p>
             </footer>
         </aside>
     );
