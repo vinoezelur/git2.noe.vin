@@ -5,6 +5,8 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import styles from "../styles/sidebar.module.css";
 import Date from "./date";
+import Header from "./sidebar_header";
+import Footer from "./sidebar_footer";
 
 export default function Sidebar() {
     const [allPostsData, setAllPostsData] = useState([]);
@@ -15,7 +17,7 @@ export default function Sidebar() {
         fetch('/api/posts')
             .then((res) => res.json())
             .then((data) => {
-                setAllPostsData(data);
+                setAllPostsData(Array.isArray(data) ? data : []);
                 setLoading(false);
             })
             .catch((err) => {
@@ -26,17 +28,13 @@ export default function Sidebar() {
 
     return (
         <aside className={styles.sidebar}>
-            <div className={styles.quoteSection}>
-                <p className={styles.heavy}>And if thou gaze long into an abyss, the abyss will also gaze into thee.</p>
-                <p className={styles.author}>Nietzsche</p>
-                <p className={styles.light}>here in lies, most of the pebbles i had gathered, when i whiled away abyss-gazing</p>
-            </div>
+            <Header />
             <nav className={styles.nav}>
                 {loading ? (
                     <div className={styles.loading}>Loading...</div>
                 ) : (
                     <ul className={styles.postList}>
-                        {allPostsData.map(({ id, date, title }) => (
+                        {(Array.isArray(allPostsData) ? allPostsData.filter(Boolean) : []).map(({ id, date, title }) => (
                             <li key={id}>
                                 <Link href={`/posts/${id}`} className={styles.postLink}>
                                     <div className={styles.postTitle}>{title}</div>
@@ -49,31 +47,7 @@ export default function Sidebar() {
                     </ul>
                 )}
             </nav>
-            <footer className={styles.footer}>
-                <div className={styles.footerContent}>
-                    <div className={styles.siteLogo}>
-                        <Image
-                            src="https://res.cloudinary.com/drsaydxjd/image/upload/v1772963705/vinoe_logo.png"
-                            height={20}
-                            width={53}
-                            alt="vinoe logo"
-                        />
-                    </div>
-                    <div className={styles.instaLogo}>
-                        <a href="https://instagram.com/vinoe.zelur" target="_blank" rel="noopener noreferrer">
-                            <Image
-                                src="https://res.cloudinary.com/drsaydxjd/image/upload/v1773229389/insta_logo.png"
-                                height={20}
-                                width={20}
-                                alt="insta logo"
-                            />
-                        </a>
-                    </div>
-                </div>
-            </footer>
-            <div className={styles.quoteSection}>
-                <p className={styles.light}>yeah yeah yeah, Nietzsche didn't mean it that way. blah blah blah!</p>
-            </div>
+            <Footer />
         </aside>
     );
 }

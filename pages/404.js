@@ -16,7 +16,7 @@ export default function Custom404() {
                     src="https://res.cloudinary.com/drsaydxjd/image/upload/v1772963705/vinoe_logo.png"
                     height={20}
                     width={53}
-                    alt="vinoe logo"
+                    alt="vinoe"
                 />
             </footer>
         </div>

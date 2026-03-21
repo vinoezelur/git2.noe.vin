@@ -1,25 +1,26 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
+import { getPostData } from '../lib/posts';
 
 export async function getStaticProps() {
+  const postData = await getPostData('_about');
   return {
-    props: {},
+    props: { postData },
   };
 }
 
-export default function Home() {
+export default function Home({ postData }) {
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
-        <p>
-          (This is a sample website - you'll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
+        <article>
+          <h1 className={utilStyles.headingXl}>{postData.title}</h1>
+          <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        </article>
       </section>
     </Layout>
   );
