@@ -1,1 +1,4 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+Nothing to read,
+Nor to understand, 
+Its just filth, trash,
+and a bit more!

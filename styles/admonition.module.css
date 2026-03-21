@@ -1,0 +1,99 @@
+/* Admonition styles (global) - dark theme with left accent stripe and icon */
+:global(.admonition) {
+    position: relative;
+    border-radius: 8px;
+    padding: 1rem 1rem 1rem 64px;
+    margin: 1rem 0;
+    background: #f5f5f5;
+    /* dark card */
+    color: #d7e6fb;
+    overflow: visible;
+}
+
+/* vertical accent stripe (positioned a bit inside to match the design) */
+:global(.admonition)::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 12px;
+    bottom: 12px;
+    width: 4px;
+    border-radius: 4px;
+    background: var(--admonition-accent, #3b82f6);
+}
+
+:global(.admonition-icon) {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--admonition-accent, #3b82f6);
+    color: #fff;
+    font-size: 16px;
+    box-shadow: 0 2px 6px rgba(2, 6, 23, 0.6);
+}
+
+:global(.admonition-inner) {
+    display: block;
+}
+
+:global(.admonition-title) {
+    font-weight: 600;
+    color: var(--admonition-accent, #3b82f6);
+    margin: 0 0 0.25rem 0;
+    display: block;
+}
+
+:global(.admonition-content) {
+    margin: 0;
+    color: #595959;
+    line-height: 1.2;
+    font-size: 0.8rem;
+}
+
+/* Type-specific accent colors (set CSS var used by icon and stripe) */
+:global(.admonition-note) {
+    --admonition-accent: #3b82f6;
+}
+
+:global(.admonition-tip) {
+    --admonition-accent: #10b981;
+}
+
+:global(.admonition-important) {
+    --admonition-accent: #8b5cf6;
+}
+
+:global(.admonition-warning) {
+    --admonition-accent: #f59e0b;
+}
+
+:global(.admonition-caution) {
+    --admonition-accent: #ef4444;
+}
+
+:global(.admonition-info) {
+    --admonition-accent: #06b6d4;
+}
+
+/* Small responsive adjustment */
+@media (max-width: 640px) {
+    :global(.admonition) {
+        padding-left: 56px;
+    }
+
+    :global(.admonition-icon) {
+        left: 6px;
+        width: 36px;
+        height: 36px;
+    }
+
+    :global(.admonition)::before {
+        left: 16px;
+    }
+}
