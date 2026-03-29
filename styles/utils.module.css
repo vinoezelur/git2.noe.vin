@@ -50,3 +50,9 @@
 .lightText {
     color: #666;
 }
+
+.borderLine {
+    border-top: 1px dotted #eee;
+    border-bottom: none;
+    margin-top: 3rem !important;
+}

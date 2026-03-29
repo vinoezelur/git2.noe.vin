@@ -1,8 +1,16 @@
-import { getSortedPostsData } from '../../lib/posts';
+import { getSortedPostsData, getSortedPostsByCategory } from '../../lib/posts';
 
 export default function handler(req, res) {
     try {
-        const allPostsData = getSortedPostsData();
+        const category = req.query.category;
+
+        let allPostsData;
+        if (category) {
+            allPostsData = getSortedPostsByCategory(category);
+        } else {
+            allPostsData = getSortedPostsData();
+        }
+
         res.status(200).json(allPostsData);
     } catch (error) {
         console.error('Error fetching posts:', error);

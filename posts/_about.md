@@ -10,13 +10,13 @@ Purpose, as I must say, of this writing, is mostly just to spew out my internal 
 [!CAUTION]
 Sometimes it's just a drunk driver with super-blinding headlights at the end of the tunnel, I must warn.
 
-Dreaming. Reminiscing. Rambling. *Po-tay-to po-tah-to!* Whatever it may be, I felt it could be given a structure. This is one such attempt.
+Dreaming. Reminiscing. Rambling. *Po-tay-to po-tah-to!* Whatever it may be, I felt it could be given a structure. This is one such attempt. The reluctance to make it a blog earlier, probably was due to the following reasons[^1].
 
-The reluctance to make it a blog earlier, probably was due to the following reasons[^1].
+**a.** `sharing is caring`  
+<small>As a selfish introvert, I had neither shared nor cared, and thats is the most likely explanation.</small>
 
-**a.** `sharing is caring —` As a selfish introvert, I had neither shared nor cared, which is the most plausible explanation.
-
-**b.** `feedback and comments -` constructive feedback is always good — at least that's what I keep telling myself. But my hyper-fragile ego didn’t mature past 3rd grade B section. So it cringes on any kind of feedback, positive or negative. Exactly how salt works on slugs. (no, not a recipe.. empathise here).
+**b.** `feedback and comments`  
+<small>Constructive feedback is always good — at least that's what I keep telling myself. But my hyper-fragile ego didn’t mature past 3rd grade B section. So it cringes on any kind of feedback, positive or negative. Exactly how salt works on slugs. (no, not a recipe.. empathise here).</small>
 
 **c.** `sheer laziness, lackadaisical attitude and lethargy`
 

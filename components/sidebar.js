@@ -1,53 +1,48 @@
 'use client';
 
 import Link from "next/link";
-import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 import styles from "../styles/sidebar.module.css";
-import Date from "./date";
 import Header from "./sidebar_header";
 import Footer from "./sidebar_footer";
 
 export default function Sidebar() {
-    const [allPostsData, setAllPostsData] = useState([]);
-    const [loading, setLoading] = useState(true);
+    const router = useRouter();
+    const pathname = router.pathname;
 
-    useEffect(() => {
-        // Fetch posts data from API route
-        fetch('/api/posts')
-            .then((res) => res.json())
-            .then((data) => {
-                setAllPostsData(Array.isArray(data) ? data : []);
-                setLoading(false);
-            })
-            .catch((err) => {
-                console.error('Failed to fetch posts:', err);
-                setLoading(false);
-            });
-    }, []);
+    const categories = [
+        { name: 'Blogs', path: '/blogs' },
+        { name: 'Pics', path: '/pics' },
+        { name: 'Doodles', path: '/doodles' },
+    ];
 
     return (
         <aside className={styles.sidebar}>
-            <Header />
+            <div className={styles.sidebarStickyHeader}>
+                <Header />
+            </div>
+
             <nav className={styles.nav}>
-                {loading ? (
-                    <div className={styles.loading}>Loading...</div>
-                ) : (
-                    <ul className={styles.postList}>
-                        {(Array.isArray(allPostsData) ? allPostsData.filter(Boolean) : []).map(({ id, date, title }) => (
-                            <li key={id}>
-                                <Link href={`/posts/${id}`} className={styles.postLink}>
-                                    <div className={styles.postTitle}>{title}</div>
-                                    {/* <div className={styles.postDate}>
-                                        <Date dateString={date} />
-                                    </div> */}
+                <ul className={styles.categoryList}>
+                    {categories.map(({ name, path }) => {
+                        const isActive = pathname === path;
+                        return (
+                            <li key={path}>
+                                <Link
+                                    href={path}
+                                    className={`${styles.navLink} ${isActive ? styles.activeNavLink : ''}`}
+                                >
+                                    {name}
                                 </Link>
                             </li>
-                        ))}
-                    </ul>
-                )}
+                        );
+                    })}
+                </ul>
             </nav>
-            <Footer />
+
+            <div className={styles.sidebarStickyFooter}>
+                <Footer />
+            </div>
         </aside>
     );
 }
