@@ -152,10 +152,13 @@
     flex-direction: column;
 }
 
-.quoteSection .light,
-.quoteSection .heavy,
-.quoteSection .author {
+.quoteSection .light {
     text-align: left;
+    margin: 0.1rem 0;
+    line-height: 1.4;
+}
+.quoteSection .author {
+    text-align: right;
     margin: 0.1rem 0;
     line-height: 1.4;
 }

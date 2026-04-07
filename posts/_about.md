@@ -5,7 +5,7 @@ title: 'Raison d’être'
 
 ### The why
 
-Purpose, as I must say, of this writing, is mostly just to spew out my internal monologues. Hence, the question of how it would benefit you as a reader, is practically beyond me. I tend to have long monologues (as like now). Hence, I decided sometime during one of my non-sober trips, that I should just jot them all somewhere somehow - so that, when I or someone else reads it later, a door of light may open. 
+Purpose, as I must say, of this writing, is purely to spew out my internal monologues. Hence, the question of how it would benefit you as a reader, is kinda beyond me. I tend to have long monologues (as like now). I made a pact with my vodka-fueled-self someday that I should just jot them all somewhere somehow - so that, when I or someone else read it later, a door of light may open at the end of the tunnel. 
 
 [!CAUTION]
 Sometimes it's just a drunk driver with super-blinding headlights at the end of the tunnel, I must warn.
@@ -26,8 +26,8 @@ Dreaming. Reminiscing. Rambling. *Po-tay-to po-tah-to!* Whatever it may be, I fe
 
 Honestly, am clueless as ever n everyone. For now, I could think of some here. Prefix every point with “Rant on”.
 
-1. spirituality, religion, unicorns and cockroaches
-2. design — the beauty or the lack of
+1. spirituality, religion, unicorns, cockroaches
+2. design — the beauty or the lack thereof
 3. love, kajakaja[^2] and heart-breaks
 4. movies, gadgets, songs and games, sometimes books
 5. philosophy
@@ -36,7 +36,7 @@ Honestly, am clueless as ever n everyone. For now, I could think of some here. P
 
 ### The who
 
-They say nothing bonds people together like shared mutual hatred. For the sake of inclusivity, I have tried to offend people of all races, religions, colours, genders, ethnicities, sexual orientations and physical abilities. So, in case you find that I have not offended enough (is under-offended a word?) of a particular sub-set of people/idealogies that you hate, please bear with me and subscribe[^3] for updates.
+They say nothing bonds people together like mutual hatred[^4]. For the sake of inclusivity, I have tried to offend people of all races, religions, colours, genders, ethnicities, sexual orientations and physical abilities. So, in case you find that I have not offended enough (is under-offended a word?) of a particular sub-set of people/idealogies that you hate, please bear with me and subscribe[^3] for updates.
 
 That said, feel free to browse through my pebbles n comment[^3].
 
@@ -45,3 +45,5 @@ That said, feel free to browse through my pebbles n comment[^3].
 [^2]: Technical terms are sex, matter, gilma. Medical term is coitus.
 
 [^3]: Was too lazy to add subscribing or commenting feature. So please check this space after a few weeks yourselves. Kindly assume things have changed after you thought of those comments. May the force be with you!
+
+[^4]: <a href="https://www.goodreads.com/quotes/305671-nothing-brings-people-together-more-than-mutual-hatred" target="_blank">Henry Collins</a>

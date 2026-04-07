@@ -56,3 +56,57 @@
     border-bottom: none;
     margin-top: 3rem !important;
 }
+
+.picsArticle {
+    margin-bottom: 3rem;
+    scroll-margin-top: 80px;
+}
+
+.picsFlexContainer {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-end;
+}
+
+.picsFlexContainer.even {
+    flex-direction: row-reverse;
+}
+
+.picsImageContainer {
+    flex: 0 0 auto;
+    max-width: 50%;
+    background: white;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.picsImage {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+}
+
+.picsDate {
+    margin-top: 0.2rem;
+    font-size: 0.6rem;
+    font-family: monospace;
+    color: #666;
+    text-align: right;
+}
+
+.picsCaption {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.picsContent {
+    flex: 1;
+    font-size: 0.8rem;
+    background: #f5f5f5;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

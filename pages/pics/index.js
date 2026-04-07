@@ -23,13 +23,20 @@ export default function PicsPage({ posts }) {
                 {posts.length === 0 ? (
                     <p>No pics found.</p>
                 ) : (
-                    posts.map(({ id, title, date, contentHtml }) => (
-                        <article key={id} id={id} style={{ marginBottom: '3rem', scrollMarginTop: '80px' }}>
-                            <h2 className={utilStyles.headingLg}>{title}</h2>
-                            <div className={utilStyles.lightText}>
-                                <Date dateString={date} />
+                    posts.map(({ id, title, date, contentHtml, url, caption }, index) => (
+                        <article key={id} id={id} className={utilStyles.picsArticle}>
+                            <div className={`${utilStyles.picsFlexContainer} ${index % 2 === 1 ? utilStyles.even : ''}`}>
+                                <div className={utilStyles.picsImageContainer}>
+                                    <img src={url} alt={title} className={utilStyles.picsImage} />
+                                    <div className={utilStyles.picsDate}>
+                                        <Date dateString={date} />
+                                    </div>
+                                    <div className={utilStyles.picsCaption}>
+                                        <p>{caption}</p>
+                                    </div>
+                                </div>
+                                <div className={utilStyles.picsContent} dangerouslySetInnerHTML={{ __html: contentHtml }} />
                             </div>
-                            <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
                             <hr className={utilStyles.borderLine} />
                         </article>
                     ))
